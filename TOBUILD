@@ -1,0 +1,6 @@
+mxmlc -output=glsl2agal.swf -static-link-runtime-shared-libraries=true -source-path=src -library-path=lib/glsl2agal.swc "src/glsl/GlslToAgalTool.as" 
+
+#compc : does not seem to be able to use a swc ?
+#compc -source-path src -include-sources src -optimize -output glsl2agal.swc
+
+

@@ -1,4 +1,4 @@
-package nme.display3D.shaders {
+package glsl {
 
 import flash.display.Sprite;
 import flash.display3D.Context3DProgramType;
@@ -19,7 +19,7 @@ public class GlslToAgalTool extends Sprite{
         "}"
         ].join("\n");
 
-        var compiler = new GlslToAgal(vertexShaderSource, Context3DProgramType.VERTEX);
+        var compiler : GlslToAgal = new GlslToAgal(vertexShaderSource, Context3DProgramType.VERTEX);
         trace(compiler.compile());
     }
 }

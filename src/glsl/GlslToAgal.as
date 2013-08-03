@@ -1,4 +1,4 @@
-package nme.display3D.shaders {
+package glsl {
 
 import com.adobe.glsl2agal.CModule;
 import com.adobe.glsl2agal.compileShader;
@@ -14,7 +14,7 @@ public class GlslToAgal {
 
     private static var cModuleInitialized : Boolean = false;
 
-    public function GlslToAgal(glslSource : String, type : String, optimize = true, usegles = true) {
+    public function GlslToAgal(glslSource : String, type : String, optimize : Boolean = true, usegles : Boolean = true) {
         if(!cModuleInitialized){
             CModule.startAsync();
             cModuleInitialized = true;
